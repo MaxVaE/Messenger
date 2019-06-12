@@ -1,0 +1,16 @@
+@import "~@/assets/styles/color.scss";
+
+.messenger-head {
+  margin: 80px;
+  .messenger {
+    width: 400px;
+    height: 150px;
+    resize: none;
+    outline:none;
+  }
+  b {
+    color: $color-blue;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
