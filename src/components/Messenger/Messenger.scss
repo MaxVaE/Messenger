@@ -1,3 +1,5 @@
+@import "~@/assets/styles/color.scss";
+
 .messenger-head {
   margin: 80px;
   .messenger {
@@ -7,6 +9,7 @@
     outline:none;
   }
   b {
+    color: $color-blue;
     font-size: 20px;
     font-weight: bold;
   }

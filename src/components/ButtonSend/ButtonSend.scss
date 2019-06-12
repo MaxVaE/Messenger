@@ -11,3 +11,7 @@
   font-weight: bold;
   outline: none;
 }
+.send:active {
+  background: $color-white;
+  color: $color-blue;
+}
