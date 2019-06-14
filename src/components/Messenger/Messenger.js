@@ -1,8 +1,10 @@
+import DialogWidget from '@/components/DialogWidget/DialogWidget.vue'
 import ButtonSend from '@/components/ButtonSend/ButtonSend.vue'
 import axios from 'axios'
 
 export default {
   components: {
+    DialogWidget,
     ButtonSend
   },
   data () {
@@ -13,8 +15,11 @@ export default {
   methods: {
     sendMessage () {
       if (this.message != ''){
+        const obj = {
+          message: this.message
+        }
         axios
-          .post('http://192.168.1.7:3000/', this.message)
+          .post('URL', obj)
           this.message = ''
       }
     }

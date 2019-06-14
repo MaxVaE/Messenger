@@ -1,0 +1,8 @@
+<div>
+  <form>
+    <p><b>Login to MaxDinger</b></p>
+    <p><input type="email" class="field" v-model="obj.Email" placeholder="E-mail"></input></p>
+    <p><input type="password" class="field" v-model="obj.Password" placeholder="Password"></input></p>
+    <p><button-account @login="login" v-bind="obj" label="Login"/></p>
+  </form>
+</div>

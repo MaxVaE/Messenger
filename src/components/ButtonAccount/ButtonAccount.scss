@@ -1,0 +1,23 @@
+@import "~@/assets/styles/color.scss";
+
+.account {
+  cursor: pointer;
+  background: $color-blue;
+  border-radius: 20px;
+  color: $color-white;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+  width: 200px;
+  height: 30px;
+  &:active {
+    background: $color-white;
+    color: $color-blue;
+  }
+  &.disabled {
+    cursor: not-allowed;
+    background: grey;
+    color: $color-white;
+  }
+}

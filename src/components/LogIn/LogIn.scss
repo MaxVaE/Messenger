@@ -1,0 +1,16 @@
+@import "~@/assets/styles/color.scss";
+
+.field {
+  margin: auto;
+  width: 300px;
+  height: 10px;
+  padding: 10px;
+  border: 1px solid $color-black;
+  border-radius: 10px;
+  outline: none;
+}
+b {
+  color: $color-blue;
+  font-size: 20px;
+  font-weight: bold;
+}

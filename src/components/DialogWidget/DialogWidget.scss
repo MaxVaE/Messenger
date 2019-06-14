@@ -1,0 +1,13 @@
+@import "~@/assets/styles/color.scss";
+
+.dialog-window {
+  margin: auto;
+  width: 440px;
+  height: 500px;
+  resize: none;
+  border: 1px solid $color-black;
+  .dialog {
+    text-align: left;
+    margin-left: 20px;
+  }
+}
