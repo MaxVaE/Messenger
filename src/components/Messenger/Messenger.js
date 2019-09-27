@@ -1,6 +1,6 @@
 import DialogWidget from '@/components/DialogWidget/DialogWidget.vue'
 import ButtonSend from '@/components/ButtonSend/ButtonSend.vue'
-import axios from 'axios'
+// import axios from 'axios'
 
 export default {
   components: {
@@ -9,18 +9,20 @@ export default {
   },
   data () {
     return {
-      message: ""
+      message: ''
     }
   },
   methods: {
     sendMessage () {
-      if (this.message != ''){
+      if (this.message !== '') {
         const obj = {
           message: this.message
         }
-        axios
-          .post('URL', obj)
-          this.message = ''
+        console.log(obj.message)
+        // Отправляет запрос на сервер
+        // axios
+        //   .post('URL', obj)
+        this.message = ''
       }
     }
   }

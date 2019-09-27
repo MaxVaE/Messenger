@@ -2,14 +2,15 @@
 
 .send {
   cursor: pointer;
-  margin: 0 0 0 300px;
+  margin: 0 0 0 320px;
   background: $color-blue;
-  border-radius: 10px;
+  border-radius: 20px;
   color: $color-white;
   border: none;
   font-size: 18px;
   font-weight: bold;
   outline: none;
+  padding: 10px
 }
 .send:active {
   background: $color-white;

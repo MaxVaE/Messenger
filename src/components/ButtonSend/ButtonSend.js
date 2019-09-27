@@ -3,8 +3,8 @@ export default {
     label: String
   },
   methods: {
-    click () { 
-      this.$emit("send")
+    click () {
+      this.$emit('send')
     }
   }
 }

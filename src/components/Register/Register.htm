@@ -1,9 +1,10 @@
 <div>
   <form>
-    <p><b>Login to MaxDinger</b></p>
+    <p><b>Create New Account</b></p>
     <p><input type="email" class="field" v-model="obj.Email" placeholder="E-mail"></input></p>
     <!-- <p class="error">123</p> -->
     <p><input type="password" class="field" v-model="obj.Password" placeholder="Password"></input></p>
-    <p><button-account @login="login" v-bind:bool="emptyInput" label="Login"/></p>
+    <p><input type="password" class="field" v-model="obj.ConfirmPassword" placeholder="Confirm Password"></input></p>
+    <p><button-account @login="login" v-bind:bool="emptyInput" label="Register"/></p>
   </form>
 </div>

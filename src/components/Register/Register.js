@@ -9,15 +9,16 @@ export default {
   data () {
     return {
       obj: {
-        Email: "",
-        Password: ""
+        Email: '',
+        Password: '',
+        ConfirmPassword: ''
       },
       bool: true
     }
   },
   computed: {
     emptyInput () {
-      this.bool = this.obj.Email === '' || this.obj.Password === ''
+      this.bool = this.obj.Email === '' || this.obj.Password === '' || this.obj.ConfirmPassword === ''
       return this.bool
     }
   },
@@ -28,10 +29,15 @@ export default {
       return re.test(email)
     },
     login () {
-      if (!this.bool) {
-        if (this.validateEmail(this.obj.Email)) {
-          axios
-            .post('URL', this.obj)
+      const bool = this.bool
+      const obj = this.obj
+      if (!bool) {
+        if (this.validateEmail(obj.Email)) {
+          if (obj.Password === obj.ConfirmPassword) {
+            console.log(obj)
+            // axios
+            //   .post('URL', obj)
+          }
         }
       }
     }
