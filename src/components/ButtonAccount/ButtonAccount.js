@@ -1,17 +1,16 @@
 export default {
   props: {
     label: String,
-    Email: String,
-    Password: String
+    bool: Boolean
   },
   computed: {
     buttonDisabled () {
-      return this.Email === '' || this.Password === ''
+      return this.bool
     }
   },
   methods: {
     click () {
-      this.$emit("login")
+      this.$emit('login')
     }
   }
 }
